@@ -1,7 +1,13 @@
 export default function Main(props) {
-  const cards = ["Rock", "Paper", "Scissors", "Spock", "Lizard"]
+  const cards = ["rock", "paper", "scissors", "spock", "lizard"]
   const cardElements = cards.map(card => (
-    <div className="card">{card}</div>
+    <div
+      key={card}
+      id={card}
+      className="card"
+      onClick={() => props.updateMyGesture(card)}>
+        {card}
+    </div>
   ))
 
   return (
@@ -13,6 +19,9 @@ export default function Main(props) {
       <div className="row gestures">
         <div>
           <img src={props.myGesture} alt="" />
+        </div>
+        <div>
+          <h2>{props.result}</h2>
         </div>
         <div>
           <img src={props.computerGesture} alt="" />
