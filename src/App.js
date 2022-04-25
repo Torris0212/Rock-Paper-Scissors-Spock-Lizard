@@ -36,31 +36,31 @@ function App() {
   const compareResult = (myCard, computerCard) => {
     if (myCard === computerCard) setResult('Tie')
     switch (myCard) {
-      case 'rock':console.log(1)
+      case 'rock':
         if (computerCard === 'paper') {setResult('Lose'); setComputerScore(prevScore => prevScore + 1)}
         if (computerCard === 'scissors') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
         if (computerCard === 'spock') {setResult('Lose'); setComputerScore(prevScore => prevScore + 1)}
         if (computerCard === 'lizard') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
         break;
-      case 'scissors':console.log(2)
+      case 'scissors':
         if (computerCard === 'paper') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
         if (computerCard === 'rock') {setResult('Lose'); setComputerScore(prevScore => prevScore + 1)}
         if (computerCard === 'spock') {setResult('Lose'); setComputerScore(prevScore => prevScore + 1)}
         if (computerCard === 'lizard') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
         break;
-      case 'paper':console.log(3)
+      case 'paper':
         if (computerCard === 'scissors') {setResult('Lose'); setComputerScore(prevScore => prevScore + 1)}
         if (computerCard === 'rock') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
         if (computerCard === 'spock') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
         if (computerCard === 'lizard') {setResult('lose'); setComputerScore(prevScore => prevScore + 1)}
         break;
-      case 'spock':console.log(4)
+      case 'spock':
         if (computerCard === 'paper') {setResult('Lose'); setComputerScore(prevScore => prevScore + 1)}
         if (computerCard === 'rock') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
         if (computerCard === 'scissors') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
         if (computerCard === 'lizard') {setResult('Lose'); setComputerScore(prevScore => prevScore + 1)}
         break;
-      case 'lizard':console.log(5)
+      case 'lizard':
         if (computerCard === 'paper') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
         if (computerCard === 'rock') {setResult('Lose'); setComputerScore(prevScore => prevScore + 1)}
         if (computerCard === 'spock') {setResult('Win'); setMyScore(prevScore => prevScore + 1)}
