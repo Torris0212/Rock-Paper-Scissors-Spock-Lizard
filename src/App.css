@@ -5,11 +5,11 @@
 .row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 main .row {
-  margin: 30px;
+  margin: 30px 0;
+  align-items: center;
 }
 
 nav {
@@ -18,8 +18,12 @@ nav {
 }
 
 main {
-  padding: 20px;
   border: 1px solid lightgray;
+}
+
+.game {
+  width: 80%;
+  padding: 0 30px;
 }
 
 .card {
@@ -30,9 +34,22 @@ main {
 }
 
 .score-board {
-  margin: 40px;
+  width: 20%;
+  padding: 0 30px;
 }
 
 .score-board h2 {
+  text-align: center;
+}
+
+table th:first-child {
+  width: 10%;
+}
+
+table th:nth-child(2) {
+  width: 50%;
+}
+
+table td {
   text-align: center;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './components/Nav'
-import Main from './components/Main'
+import Game from './components/Game'
 import question from './images/question.jpg'
 import rock from './images/rock.png'
 import paper from './images/paper.png'
@@ -136,14 +136,16 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <ScoreBoard results={results} />
-      <Main
-        myGesture={myGesture}
-        updateMyGesture={updateMyGesture}
-        computerGesture={computerGesture}
-        myScore={myScore}
-        computerScore={computerScore}
-        results={results} />
+      <main className="row">
+        <Game
+          myGesture={myGesture}
+          updateMyGesture={updateMyGesture}
+          computerGesture={computerGesture}
+          myScore={myScore}
+          computerScore={computerScore}
+          results={results} />
+        <ScoreBoard results={results} />
+      </main>
     </div>
   );
 }

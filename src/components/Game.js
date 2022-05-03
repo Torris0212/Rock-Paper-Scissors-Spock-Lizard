@@ -1,4 +1,4 @@
-export default function Main(props) {
+export default function Game(props) {
   const cards = ["rock", "paper", "scissors", "spock", "lizard"]
   const cardElements = cards.map(card => (
     <div
@@ -11,7 +11,7 @@ export default function Main(props) {
   ))
 
   return (
-    <main>
+    <div className="game">
       <div className="row scores">
         <div>You: {props.myScore}</div>
         <div>Computer: {props.computerScore}</div>
@@ -30,6 +30,6 @@ export default function Main(props) {
       <div className="row cards">
         {cardElements}
       </div>
-    </main>
+    </div>
   )
 }

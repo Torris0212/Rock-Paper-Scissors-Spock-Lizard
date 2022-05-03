@@ -11,10 +11,10 @@ export default function ScoreBoard(props) {
   return (
     <div className="score-board">
       <h2>Score Board</h2>
-      <table className="table table-striped">
+      <table className="table">
         <thead>
           <tr>
-          <th></th>
+          <th>#</th>
           <th>You</th>
           <th>Computer</th>
         </tr>
