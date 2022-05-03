@@ -23,6 +23,7 @@ export default function ScoreBoard(props) {
           {scoreElements}
         </tbody>
       </table>
+      <button className="reset" onClick={props.resetScores}>Reset</button>
     </div>
   )
 }

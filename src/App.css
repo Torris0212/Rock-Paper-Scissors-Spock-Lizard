@@ -53,3 +53,8 @@ table th:nth-child(2) {
 table td {
   text-align: center;
 }
+
+.reset {
+  float: right;
+  margin-top: 30px;
+}

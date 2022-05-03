@@ -133,6 +133,10 @@ function App() {
     }
   }
 
+  const resetScores = () => {
+    setResults([]);
+  }
+
   return (
     <div className="App">
       <Nav />
@@ -144,7 +148,9 @@ function App() {
           myScore={myScore}
           computerScore={computerScore}
           results={results} />
-        <ScoreBoard results={results} />
+        <ScoreBoard
+          results={results}
+          resetScores={resetScores} />
       </main>
     </div>
   );
