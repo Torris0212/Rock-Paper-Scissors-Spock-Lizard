@@ -9,7 +9,7 @@
 }
 
 main .row {
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 nav {
@@ -27,4 +27,12 @@ main {
   padding: 50px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.score-board {
+  margin: 40px;
+}
+
+.score-board h2 {
+  text-align: center;
 }

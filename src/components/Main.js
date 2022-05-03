@@ -21,7 +21,7 @@ export default function Main(props) {
           <img src={props.myGesture} alt="" />
         </div>
         <div>
-          <h2>{props.result}</h2>
+          <h2>{props.results[props.results.length - 1]}</h2>
         </div>
         <div>
           <img src={props.computerGesture} alt="" />
